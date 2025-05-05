@@ -1,6 +1,7 @@
 
 import React from "react";
 import { Button } from "@/components/ui/button";
+import { Image } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -55,8 +56,15 @@ const Hero = () => {
                   </div>
                   <div className="bg-accent/10 text-accent px-3 py-1 rounded-full text-sm font-medium">Hot</div>
                 </div>
-                <div className="h-64 bg-gradient-to-r from-primary/30 to-accent/30 rounded-md flex items-center justify-center">
-                  <span className="text-white/70 font-medium">Preview Image</span>
+                <div className="h-64 bg-gradient-to-r from-primary/30 to-accent/30 rounded-md flex items-center justify-center relative overflow-hidden">
+                  <img 
+                    src="https://images.unsplash.com/photo-1561214115-f2f134cc4912?auto=format&fit=crop&q=80&w=800&h=600" 
+                    alt="Digital artwork auction" 
+                    className="object-cover w-full h-full"
+                  />
+                  <div className="absolute bottom-2 right-2 bg-black/50 text-white p-1 rounded-md">
+                    <Image className="h-4 w-4" />
+                  </div>
                 </div>
                 <div className="flex justify-between items-center">
                   <div className="flex items-center space-x-2">
